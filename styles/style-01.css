@@ -4,7 +4,7 @@ html {
 
 body {
     text-align: left;
-    background-color: aqua;
+    background-color: white;
     padding: 0;
     margin: 0;
     z-index: -2;
@@ -91,6 +91,7 @@ a {
     text-align: left;
 }
 h3 {
+    color: white;
     font-size: 200px;
     font-weight: bolder;
     line-height: 60%;
@@ -107,14 +108,12 @@ h3 {
 }
 #cs-slide > h3 {
     margin-top: 35px;
-    color: white;
 }
 #de-slide > h3 {
     margin-top: 90px;
 }
 #o-slide > h3 {
     margin-top: 140px;
-    color: #993627;
 }
 
 
@@ -164,15 +163,18 @@ input[type="checkbox"]:checked ~ .slide {
     width: 480px;
 }
 #cs-slide {
-    background-color: #000000;
+    background-image: url(../images/cs-bg.png);
+    background-size: 1063px 900px;
     top: 400px;
 }
 #de-slide {
-    background-color: #ffa453;
+    background-image: url(../images/de-bg.png);
+    background-size: 1063px 900px;
     top: 1300px;
 }
 #o-slide {
-    background-color: #000000;
+    background-image: url(../images/o-bg.png);
+    background-size: 1063px 900px;
     top: 2200px;
 }
 
@@ -183,17 +185,20 @@ input[type="checkbox"]:checked ~ .slide {
     font-style: italic;
     letter-spacing: -1px;
     position: absolute;
-    top: 75px;
+    top: 100px;
     left: 220px;
     width: 700px;
     transition: all .3s;
     z-index: 3;
 }
-#cs-slide h5, #o-slide h5 {
+#cs-slide h5{
     color: #ffffff;
 }
 #de-slide h5 {
-    color: #d86319;
+    color: #9da081;
+}
+#o-slide h5 {
+    color: #abb44b;
 }
 input[type="checkbox"]:checked ~ .slide h5 {
     opacity: 0;
@@ -204,7 +209,7 @@ input[type="checkbox"]:checked ~ .slide h5 {
     font-size: 25px;
     letter-spacing: -2px;
     position: absolute;
-    top: 200px;
+    top: 250px;
     left: 220px;
     width: 40vw;
     transition: all .3s;
@@ -246,27 +251,27 @@ input[type="checkbox"]:checked ~ div .bg-section {
 #videos {
     top: 0px;
     height: 450px;
-    background-color: #ffe88d;
+    background-color: #f7fada;
 }
 #art {
     top: 450px;
     height: 450px;
-    background-color: #ffcd53;
+    background-color: #e4e8b7;
 }
 #academic {
     top: 0;
     height: 300px;
-    background-color: #eabb9c;
+    background-color: #f6fbba;
 }
 #service {
     top: 300px;
     height: 300px;
-    background-color: #e8a58f;
+    background-color: #ecf19e;
 }
 #ec {
     top: 600px;
     height: 300px;
-    background-color: #eabb9c;
+    background-color: #f6fbba;
 }
 
 h4 {
@@ -276,13 +281,17 @@ h4 {
     font-variant-caps: all-petite-caps;
     margin: 0;
 }
-#cs-bg h4, #o-bg h4 {
-    color: #000000;
+#cs-bg h4{
+    color: #56574a;
     text-shadow: 1px 1px #c9c9c9;
 }
 #de-bg h4 {
-    color: #d86319;
-    text-shadow: 1px 1px #ffa453;
+    color: #9da081;
+    text-shadow: 1px 1px #c6c9a2;
+}
+#o-bg h4 {
+    color: #abb44b;
+    text-shadow: 1px 1px #c6c9a2;
 }
 
 #cs-bg {
@@ -309,10 +318,11 @@ h4 {
 }
 
 
-/* Box Formatting -------------------------- */
+
 
 .box {
     position: absolute;
+    text-overflow: ellipsis;
     float: right;
     top: 60px;
     left: 110px;
@@ -331,10 +341,15 @@ h4 {
     background-color: #f3f3f3;
     box-shadow: 4px 3px #c9c9c9;
 }
-#design .box {
+#videos .box {
     height: 350px;
-    background-color: #f7f2dc;
-    box-shadow: 4px 3px #ffa453;
+    background-color: #ffffff;
+    box-shadow: 4px 3px #9da081;
+}
+#art .box {
+    height: 350px;
+    background-color: #f7fada;
+    box-shadow: 4px 3px #9da081;
 }
 
 /* ----- COMPUTER SCIENCE BOXES ----- */
@@ -419,4 +434,34 @@ input[type="checkbox"]:checked ~ div #ec2 {
 input[type="checkbox"]:checked ~ div #ec3 {
     left: 625px;
 }
+
+
+
+/* Box Interior Info -------------------------- */
+
+.bg-section h6 {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+.bg-section h6 + p {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.bg-section p {
+    font-size: 13px;
+    letter-spacing: -1px;
+    margin: 0 30px;
+}
+.bg-section a {
+    position: relative;
+    font-size: 13px;
+    text-decoration: underline;
+    letter-spacing: -1px;
+    color: #56574a;
+    padding: 0;
+    text-shadow: none;
+}
+
+
 
