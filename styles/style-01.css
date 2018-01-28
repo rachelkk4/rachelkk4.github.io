@@ -1,14 +1,18 @@
 html {
     font-family: 'Overpass Mono', monospace;
 }
-
 body {
     text-align: left;
     background-color: white;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
     z-index: -2;
 }
+body, html {
+     overflow-x: hidden;
+}
+
 
 .welcome {
     background-image: url(../images/welcome-bg.png);
@@ -24,7 +28,7 @@ h2 {
     background: url(../images/bamboo.jpg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 100vw;
+    background-size: 400px;
     display: block;
     padding: 110px 0 0 100px;
     margin: 0;
@@ -68,7 +72,7 @@ a {
     position: relative;
     display: inline-block;
     background-image: url(../images/bamboo.jpg);
-    background-size: 100vw;
+    background-size: 800px;
     width: 200px;
     height: 50px;
     margin: 10px;
@@ -154,6 +158,7 @@ input[type="checkbox"]:checked ~ label {
 .slide {
     position: absolute;
     overflow: hidden;
+    left: 0;
     height: 900px;
     width: 1063px;
     z-index: 2;
@@ -301,12 +306,14 @@ h4 {
     height: 900px;
     width: 100vw;
     top: 400px;
+    left: 0;
 }
 #de-bg {
     position: absolute;
     background-color: #ffe88d;
     height: 900px;
     width: 100vw;
+    left: 0;
     top: 1300px;
 }
 #o-bg {
@@ -314,15 +321,17 @@ h4 {
     background-color: #eabb9c;
     height: 900px;
     width: 100vw;
+    left: 0;
     top: 2200px;
 }
 
 
 
+/* Box Formatting -------------------------- */
 
 .box {
     position: absolute;
-    text-overflow: ellipsis;
+    overflow: hidden;
     float: right;
     top: 60px;
     left: 110px;
@@ -396,8 +405,12 @@ input[type="checkbox"]:checked ~ div #v3 {
 
 /* Art */
 input[type="checkbox"]:checked ~ div #a1 {
-    width: 500px;
-    left: 250px;
+    width: 350px;
+    left: 110px;
+}
+input[type="checkbox"]:checked ~ div #a2 {
+    width: 350px;
+    left: 520px;
 }
 
 
@@ -462,6 +475,13 @@ input[type="checkbox"]:checked ~ div #ec3 {
     padding: 0;
     text-shadow: none;
 }
-
+.box .fade {
+    position: absolute;
+    background-image: url(../images/fade-out.png);
+    background-size: 100% 40px;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
 
 
