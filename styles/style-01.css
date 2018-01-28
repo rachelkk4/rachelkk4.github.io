@@ -23,7 +23,7 @@ body, html {
     margin: 0;
     z-index: 0;
 }
-h2 {
+.welcome h2 {
     font-size: 100px;
     background: url(../images/bamboo.jpg);
     -webkit-background-clip: text;
@@ -130,16 +130,16 @@ input[type="checkbox"] {
 label {
     position: absolute;
     font-size: 70px;
-    right: 321px;
+    right: 323px;
     color: white;
     z-index: 3;
+	transition: all .7s;
 }
 input[type="checkbox"]:checked ~ label {
-    content: url(../images/triangle-black.png);
     transform: scaleX(-1);
     height: 100px;
     width: 100px;
-    right: 850px;
+    right: 838px;
     z-index: 3;
 }
 #lbl-cs {
@@ -241,17 +241,17 @@ input[type="checkbox"]:checked ~ div .bg-section {
 #w-exp {
     top: 0;
     height: 300px;
-    background-color: #e7e7e7;
+    background-color: #dadada;
 }
 #pp {
     top: 300px;
     height: 300px;
-    background-color: #ffffff;
+    background-color: #e7e7e7;
 }
 #ugra {
     top: 600px;
     height: 300px;
-    background-color: #e7e7e7;
+    background-color: #dadada;
 }
 #videos {
     top: 0px;
@@ -302,7 +302,7 @@ h4 {
 #cs-bg {
     position: absolute;
     display: block;
-    background-color: #eabb9c;
+    background-color: #e7e7e7;
     height: 900px;
     width: 100vw;
     top: 400px;
@@ -343,11 +343,11 @@ h4 {
     z-index: 4;
 }
 #w-exp .box, #ugra .box{
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     box-shadow: 4px 3px #c9c9c9;
 }
 #pp .box {
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     box-shadow: 4px 3px #c9c9c9;
 }
 #videos .box {
@@ -359,6 +359,14 @@ h4 {
     height: 350px;
     background-color: #f7fada;
     box-shadow: 4px 3px #9da081;
+}
+#academic .box, #ec .box {
+    background-color: #ffffff;
+    box-shadow: 4px 3px #abb44b;
+}
+#service .box {
+    background-color: #fdffea;
+    box-shadow: 4px 3px #abb44b;
 }
 
 /* ----- COMPUTER SCIENCE BOXES ----- */
@@ -404,6 +412,27 @@ input[type="checkbox"]:checked ~ div #v3 {
 }
 
 /* Art */
+#art .box img {
+	position: relative;
+	width: 80%;
+	height: auto;
+	left: 35px;
+}
+#art .box button {
+	position: absolute;
+	background-color: rgba(0,0,0,0.4);
+	border: none;
+	height: 50px;
+	width: 30px;
+	top: 160px;
+	z-index: 5;
+}
+#art .box .display-left {
+	left: 10px;
+}
+#art .box .display-right {
+	right: 10px;
+}
 input[type="checkbox"]:checked ~ div #a1 {
     width: 350px;
     left: 110px;
@@ -458,26 +487,52 @@ input[type="checkbox"]:checked ~ div #ec3 {
     margin: 20px 0 0 0;
 }
 .bg-section h6 + p {
+	font-size: 12px;
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 0 10px 20px 10px;
+}
+.bg-section h6 + p a {
+	font-size: 12px;
+}
+#videos h6 + p {
+	margin: 17px 8px;
+}
+#design .box li {
+	margin-bottom: 10px;
 }
 .bg-section p {
     font-size: 13px;
     letter-spacing: -1px;
     margin: 0 30px;
 }
+.bg-section li {
+	font-size: 13px;
+	letter-spacing: -1px;
+	margin: 0 30px 0 0;
+}
+.bg-section ul {
+	list-style-type: square;
+	margin: 7px 0;
+}
 .bg-section a {
     position: relative;
     font-size: 13px;
+	font-weight: normal;
     text-decoration: underline;
     letter-spacing: -1px;
+	line-height: normal;
     color: #56574a;
+	top: 0;
     padding: 0;
     text-shadow: none;
+	transition: all 0s;
+}
+.bg-section a:hover {
+	color: cornflowerblue;
 }
 .box .fade {
     position: absolute;
-    background-image: url(../images/fade-out.png);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     background-size: 100% 40px;
     bottom: 0;
     height: 40px;
@@ -485,3 +540,37 @@ input[type="checkbox"]:checked ~ div #ec3 {
 }
 
 
+/* About Me -------------------------- */
+
+.about-me {
+	position: absolute;
+	top: 3100px;
+	height: 600px;
+	width: 100vw;
+}
+.me-info {
+	position: absolute;
+	background-color: white;
+	top: 0;
+	right: 0;
+	height: 600px;
+	width: 60vw;
+	z-index: 3;
+}
+#me-pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 600px;
+	z-index: 2;
+}
+.me-info h2 {
+    font-size: 100px;
+    background: url(../images/IMG_3743.JPG);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    display: block;
+    padding: 110px 0 0 100px;
+    margin: 0;
+}
