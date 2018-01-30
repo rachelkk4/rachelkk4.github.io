@@ -168,48 +168,8 @@ input[type="radio"]:checked + #reinventing-geospatial h2 {
 }
 
 
-/* SUB-SECTION ------------------------------- */
+/* LABELS ------------------------------- */
 
-.sub-section {
-	position: relative;
-	display: inline-block;
-	font-size: 20px;
-	text-align: center;
-	max-width: 20%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	z-index: 2;
-	overflow: hidden;
-	transition: max-width .6s;
-}
-input[type="radio"]:checked + .sub-section {
-	max-width: 60%;
-}
-.width-control {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 2200px;
-	height: 30%;
-	opacity: 0;
-}
-.sub-content {
-	position: relative;
-	width: 90%;
-	height: 0%;
-	left: 5%;
-	top: -20%;
-	background-color: white;
-	transition: all .6s;
-	margin-top: 60%;
-}
-input[type="radio"]:checked + .sub-section .sub-content {
-	height: 60%;
-	margin-top: 0;
-}
 input[type="radio"] {
 	display: none;
 	position: absolute;
@@ -244,6 +204,61 @@ input[type="radio"]:checked + .sub-section label {
 }
 input[type="radio"]:checked + .sub-section h2 {
 	top: 10%;
+}
+
+
+/* SUB-SECTION ------------------------------- */
+
+.sub-section {
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	max-width: 20%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+	overflow: hidden;
+	transition: max-width .6s;
+}
+input[type="radio"]:checked + .sub-section {
+	max-width: 60%;
+}
+.width-control {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 2200px;
+	height: 30%;
+	opacity: 0;
+}
+
+.sub-content {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	width: 90%;
+	height: 0%;
+	left: 5%;
+	top: -20%;
+	background-color: white;
+	transition: all .6s;
+	margin-top: 60%;
+}
+input[type="radio"]:checked + .sub-section .sub-content {
+	height: 60%;
+	margin-top: 0;
+}
+.sub-content h3 {
+	font-size: 10%;
+	letter-spacing: -1px;
+}
+.sub-content p {
+	font-size: 8%;
+	letter-spacing: -2px;
 }
 
 

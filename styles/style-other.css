@@ -100,116 +100,8 @@ backface-visibility: hidden;
 }
 
 
-/* Work Experience ------------- */
+/* LABELS ------------------------------- */
 
-#work-experience {
-	background-color: white;
-	top: 80vh;
-}
-
-#raytheon {
-    background-color: #dadada;
-	float: left;
-}
-#ray-content {
-	width
-}
-
-#microsoft {
-    background-color: #e7e7e7;
-	
-}
-#reinventing-geospatial {
-    background-color: #dadada;
-	float: right;
-}
-#reinventing-geospatial h2 {
-	top: 33%;
-}
-input[type="radio"]:checked + #reinventing-geospatial h2 {
-	top: 10%;
-}
-
-
-/* Personal Projects ------------- */
-
-#personal-projects {
-	background-color: gray;
-	top: 150vh;
-}
-#personal-projects h1 {
-	color: white;
-	text-shadow: 1px 1px black;
-}
-#personal-projects label {
-	background-color: dimgray;
-}
-#personal-projects .sub-section {
-	max-width: 30%;
-}
-#personal-projects input[type="radio"]:checked + .sub-section {
-	max-width: 70%;
-}
-#vr-runner {
-	background-color: darkgray;
-}
-
-
-/* Research ------------- */
-
-#research {
-	background-color: #dadada;
-	top: 220vh;
-}
-
-/* modified for single element */
-#research .sub-section {
-	max-width: 100%;
-}
-
-
-/* SUB-SECTION ------------------------------- */
-
-.sub-section {
-	position: relative;
-	display: inline-block;
-	font-size: 20px;
-	text-align: center;
-	max-width: 20%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	z-index: 2;
-	overflow: hidden;
-	transition: max-width .6s;
-}
-input[type="radio"]:checked + .sub-section {
-	max-width: 60%;
-}
-.width-control {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 2200px;
-	height: 30%;
-	opacity: 0;
-}
-.sub-content {
-	position: relative;
-	width: 90%;
-	height: 0%;
-	left: 5%;
-	top: -20%;
-	background-color: white;
-	transition: all .6s;
-	margin-top: 60%;
-}
-input[type="radio"]:checked + .sub-section .sub-content {
-	height: 60%;
-	margin-top: 0;
-}
 input[type="radio"] {
 	display: none;
 	position: absolute;
@@ -246,7 +138,73 @@ input[type="radio"]:checked + .sub-section h2 {
 	top: 10%;
 }
 
+/* SUB-SECTION ------------------------------- */
 
+.sub-section {
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	max-width: 20%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+	overflow: hidden;
+	transition: max-width .6s;
+}
+input[type="radio"]:checked + .sub-section {
+	max-width: 60%;
+}
+.width-control {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 2200px;
+	height: 30%;
+	opacity: 0;
+}
+.sub-content {
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	height: 0%;
+	left: 5%;
+	top: -20%;
+	background-color: white;
+	transition: all .6s;
+	margin-top: 60%;
+}
+input[type="radio"]:checked + .sub-section .sub-content {
+	height: 60%;
+	margin-top: 0;
+}
+
+
+
+
+/* Academics ------------- */
+
+#academics {
+	top: 80vh;
+}
+
+
+/* Service ------------- */
+
+#service {
+	top: 150vh;
+	background-color: gray;
+}
+
+
+/* Service ------------- */
+
+#service {
+	top: 220vh;
+}
 
 
 
