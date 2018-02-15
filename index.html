@@ -3,287 +3,74 @@
     <head>
         <meta charset="utf-8">
         <meta name="author" content="Rachel Kitchen">
-        <meta name="description" content="Rachel Kitchen portfolio.">
-        <link rel="stylesheet" href="styles/style-01.css">
-        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
-		
-                
-        <title>Rachel Kitchen</title>
+        <meta name="description" content="Online resume, portfolio, and project tracker for Rachel Kitchen.">
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+        <title>title</title>
+
     </head>
-    
+
     <body>
-        <main>
-            <!-- Welcome Info -->
-            
-            <div class="welcome">
-                <h2>welcome</h2>
-                <p></p>
-                <p>Click any of the boxes below to jump to a section.</p>
-                <div class="section-links">
-                    <div class="link" id="cs-link">
-                        <a href="computer-science.html">COMPUTER SCIENCE</a>
-                    </div>
-                    <div class="link" id="de-link">
-                        <a href="design.html">DESIGN</a>
-                    </div>
-                    <div class="link" id="o-link">
-                        <a href="other.html">OTHER</a>
-                    </div>
-                </div>
-                <div id="background"></div>
-            </div>
-            
-            <div class="section" id="computer-science">
-                <input type="checkbox" id="cs">
-                <label for="cs" id="lbl-cs"><img src="images/triangle-white.png" alt="expand-label" height="100px" width="100px"></label>
-                <div class="slide" id="cs-slide">
-                    <h3>CompSci</h3>
-                    <h5>short summary line</h5>
-                    <p>short description paragraph on what computer science means to me, what I plan to do in the field, what topics are interesting to me, etc.</p>
-                </div>
-                <div class="bg" id="cs-bg">
-                    <div class="bg-section" id="w-exp">
-                        <h4>Work Experience</h4>
-                        <div class="box" id="we1">
-                            <h6>Raytheon Co.</h6>
-                            <p>Largo, FL</p>
-                            <p><b>Title:</b> Cyber Security Engineer Intern</p>
-                            <p><b>Time:</b> May-July 2017</p>
-							<ul>
-								<li>Tested and optimized security protocols on secure cloud collaboration network</li>
-								<li>Setup virtual environments with Docker</li>
-							</ul>
-                        </div>
-                        <div class="box" id="we2">
-							<div class="fade"></div>
-                            <h6>Microsoft</h6>
-                            <p>Seattle, WA</p>
-                            <p><b>Title:</b> Explorer Intern</p>
-                            <p><b>Time:</b> May-August 2018 <i>(planned)</i></p>
-							<ul>
-								<li>8 weeks as a Software Engineer intern, 4 weeks as Program Manager</li>
-								<li>Part of the Microsoft Outlook team</li>
-							</ul>
-                        </div>
-                    </div>
-                    <div class="bg-section" id="pp">
-                        <h4>Personal Projects</h4>
-                        <div class="box" id="pp1">
-							<div class="fade"></div>
-                            <h6>"VR Runner"</h6>
-                            <p>Mobile VR game</p>
-<!--
-							<button id="vr-demo-btn" href="#vr-demo">Video Demo</button>
-							<div class="modal" id="vr-demo">
-								<div class="modal-content">
-									<a class="close" href="#">&times;</a>
-									<video src="videos/vr-runner-demo.MP4" type="video\MP4" width="605" height="450" controls></video>
-								</div>
-							</div>
--->
-                            <ul>
-								<li>Single-player mobile game created using Unity Game Engine <b>(C#)</b></li>
-							</ul>
-							
-                        </div>
-                        <div class="box" id="pp2">
-							<div class="fade"></div>
-							<h6>Github Page</h6>
-							<p><a href="https://github.com/rakitch">https://github.com/rakitch</a></p>
-							<ul>
-								<li>Updated with projects from classes, hackathons, research, and personal projects (such as this website!)</li>
-							</ul>
-						</div>
-                    </div>
-                    <div class="bg-section" id="ugra">
-                        <h4>Undergrad Research</h4>
-                        <div class="box" id="ugra1">
-                            <div class="fade"></div>
-                            <h6>Machine Learning Visualization</h6>
-                            <p>Hume Center at Virginia Tech</p>
-                            <p><b>Time:</b> August-December 2017</p>
-							<ul>
-                            	<li>Designed, trained, and tested deep learning neural networks</li>
-                            	<li>Visualized network structure and data for a higher understanding of machine learning algorithms</li>
-								<li>Final Poster: <a href="../files/NNV-poster-fall2017.pdf">click here</a></li>
-							</ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section" id="design">
-                <input type="checkbox" id="de">
-                <label for="de" id="lbl-de"><img src="images/triangle-white.png" alt="expand-label" height="100px" width="100px"></label>
-                <div class="slide" id="de-slide">
-                    <h3>Design</h3>
-                    <h5>short summary line</h5>
-                    <p>paragraph description of my history with art/design (making videos, interest in art, etc.) and what it means in my life and how it affects my approach to other things</p>
-                </div>
-                <div class="bg" id="de-bg">
-                    <div class="bg-section" id="videos">
-                        <h4>Video Production</h4>
-                        <div class="box" id="v1">
-                            <h6>Promotional</h6>
-							<p>Paid projects to create promotional videos for startup companies.</p>
-							<ul>
-								<li><a href="https://www.youtube.com/edit?o=U&video_id=HdK6oInEj34">WishDrop (2016)</a></li>
-								<li><a href="https://www.youtube.com/edit?o=U&video_id=pZKd_YKcT74">Launch Academy (2016)</a></li>
-								<li><a href="https://www.youtube.com/edit?o=U&video_id=Bxue-5W_XtA">Water Project (2014)</a></li>
-							</ul>
-                        </div>
-                        <div class="box" id="v2">
-                            <h6>Animation &amp; Experimental</h6>
-							<p>2D animation and special-effects, including motion graphics, keyframe drawing, and layering.</p>
-							<ul>
-								<li><a href="https://www.youtube.com/watch?v=tx3pgIn7Gy0&t=58s">"Please Let Me Wonder" Animation (2016)</a></li>
-<!--
-								<li><a href="https://www.youtube.com/edit?o=U&video_id=2xfx_hNXArc">"Streetlights" (2015)</a></li>
-								<li><a href="https://www.youtube.com/edit?o=U&video_id=2xfx_hNXArc">"I'll Be Alright" (2015)</a></li>
--->
-							</ul>
-                        </div>
-                        <div class="box" id="v3">
-                            <h6>Other</h6>
-							<p>One-time projects completed for classes and clubs.</p>
-							<ul>
-								<li><a href="https://www.youtube.com/watch?v=KjEHSY4VUZM">Poolesville Track &amp; Field End of Year Video (2016)</a></li>
-								<li><a href="https://www.youtube.com/watch?v=WR5BtZPd9nk">"I Want It Math Way" AP Calculus Project (2016)</a></li>
-								<li><a href="https://www.youtube.com/watch?v=ZRKe9NyFrUo">"Apollo and Daphne" Art History Project (2016)</a></li>
-							</ul>
-                        </div>
-                    </div>
-                    <div class="bg-section" id="art">
-                        <h4>Art</h4>
-                        <div class="box" id="a1">
-                            <h6>Digital</h6>
-							<p>Art pieces created using technology and software.</p>
-							<img class="digital">
-							<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
-							<button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
-                        </div>
-                        <div class="box" id="a2">
-                            <h6>Traditional</h6>
-							<p>Art created using physical materials.</p>
-							<img class="traditional" src="images/Elephant.JPG">
-							<img class="traditional" src="images/self-portrait.jpg" height="275px" width="260px">
-							<img class="traditional" src="images/Zebra1.JPG" height="205px" width="260px">
-							<img class="traditional" src="images/Zebra2.JPG" height="198px" width="260px">
-							<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
-							<button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section" id="other">
-                <input type="checkbox" id="o">
-                <label for="o" id="lbl-o"><img src="images/triangle-white.png" alt="expand-label" height="100px" width="100px"></label>
-                <div class="slide" id="o-slide">
-                    <h3>Other</h3>
-                    <h5>short summary line</h5>
-                    <p>another paragraph, about the other things that I do that make me more well-rounded, etc.</p>
-                </div>
-                <div class="bg" id="o-bg">
-                    <div class="bg-section" id="academic">
-                        <h4>Academic</h4>
-                        <div class="box" id="ac1">
-                            <h6>Virginia Tech</h6>
-							<p>Blacksburg, VA</p>
-							<p><b>Degree:</b> Computer Science</p>
-							<p><b>Graduation Date:</b> May 2020</p>
-							<p><b>GPA: </b> 3.80</p>
-							<ul>
-								<li>Minors: Math, Spanish</li>
-								<li>Investment in Excellence</li>
-							</ul>
-                        </div>
-                        <div class="box" id="ac2">
-                            <h6>Poolesville HS</h6>
-							<p>Poolesvile, MD</p>
-							<p><b>Magnet Program:</b> Humanities</p>
-							<p><b>Graduation Date:</b> June 2016</p>
-							<ul>
-								<li><a href="http://www.montgomeryschoolsmd.org/schools/poolesvillehs/">PHS website</a></li>
-								
-							</ul>
-                        </div>
-                        <div class="box" id="ac3">
-                            <h6>Awards &amp; Honors</h6>
-							<p></p>
-							<ul>
-								<li>Investment in Excellence Scholarship (2017)</li>
-								<li>CSRC Scholarship (2017)</li>
-								<li>1st Place in Arduino Hackathon (2017)</li>
-							</ul>
-                        </div>
-                    </div>
-                    <div class="bg-section" id="service">
-                        <h4>Service</h4>
-                        <div class="box" id="s1">
-                            <h6>Service in College</h6>
-                        </div>
-                        <div class="box" id="s2">
-                            <h6>Girl Scouts</h6>
-                        </div>
-                    </div>
-                    <div class="bg-section" id="ec">
-                        <h4>Extracurricular</h4>
-                        <div class="box" id="ec1">
-                            <h6>Running Club</h6>
-							<p>Running Club at Virginia Tech</p>
-							<ul>
-								<li><a href="http://www.runningclub.org.vt.edu/">VTRC website</a></li>
-							</ul>
-                        </div>
-                        <div class="box" id="ec2">
-                            <h6>Hackers@VT</h6>
-							<p></p>
-							<ul>
-								<li><b>Officer:</b> Design Committee</li>
-							</ul>
-                        </div>
-                        <div class="box" id="ec3">
-                            <h6>AWC</h6>
-                            <p>Association for Women in Computing</p>
-							<ul>
-								<li><a href="http://www.awc.org.vt.edu/">AWC website</a></li>
-								<li><b>Officer:</b> Student Engineer Council (SEC) Chair</li>
-							</ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-			<div class="about-me">
-				<div class="me-info">
-					<h2>about me</h2>
-				</div>
-				<img id="me-pic" src="images/IMG_3743.JPG" height="600px" width="800px">
+		<nav>
+			<div class="nav-link">
+				<a href="index.html">home</a>
+				<div class="highlight"></div>
+			</div>
+			<div class="nav-link">
+				<a href="projects.html">projects</a>
+				<div class="highlight"></div>
+			</div>
+			<div class="nav-link">
+				<a href="videos.html">videos</a>
+				<div class="highlight"></div>
+			</div>
+			<div class="nav-link">
+				<a href="art.html">art</a>
+				<div class="highlight"></div>
+			</div>
+			<div class="nav-link">
+				<a href="about.html">about</a>
+				<div class="highlight"></div>
+			</div>
+		</nav>
+		
+		<main>
+			<div id="welcome">
+				<h1>home
+					<div class="highlight"></div>
+				</h1>
+				
 			</div>
 			
-        </main>
+			<div id="sections">
+				<a class="section-link" href="projects.html">
+					<img class="section-img" src="images/icons/projects.png">
+				</a>
+				<img class="section-img sub" src="images/icons/projects-cyan.png">
+				
+				<a class="section-link" href="videos.html"><img class="section-img" src="images/icons/videos.png"></a>
+				<img class="section-img sub" src="images/icons/videos-cyan.png">
+				
+				<a class="section-link" href="art.html"><img class="section-img" src="images/icons/art.png"></a>
+				<img class="section-img sub" src="images/icons/art-cyan.png">
+			</div>
+			<div id="sections-captions">
+				<a href="projects.html">projects</a>
+				<a href="videos.html">videos</a>
+				<a href="art.html">art</a>
+			</div>
+		</main>
 		
-		
-		<script>
-			var slideIndex = 1;
-			showDivs(slideIndex);
-
-			function plusDivs(n) {
-			  showDivs(slideIndex += n);
-			}
-
-			function showDivs(n) {
-			  var i;
-			  var x = document.getElementsByClassName("traditional");
-			  if (n > x.length) {slideIndex = 1}    
-			  if (n < 1) {slideIndex = x.length}
-			  for (i = 0; i < x.length; i++) {
-				 x[i].style.display = "none";  
-			  }
-			  x[slideIndex-1].style.display = "block";  
-			}
-		</script>
-		
+		<footer>
+			<p>Rachel Kitchen</p>
+			<div id="social-media-links">
+				<a href="https://github.com/rakitch"><img src="images/icons/github.png"></a>
+				<a href="https://linkedin.com/in/rachel-kitchen-a0194a120/"><img src="images/icons/linkedin.png"></a>
+				<a href="https://www.youtube.com/channel/UCoTjgbw1I6078hHau2clT-Q"><img src="images/icons/youtube.png"></a>
+				<a href="https://behance.net/rachelkk4b848"><img src="images/icons/behance.png"></a>
+			</div>
+		</footer>
     </body>
+
 </html>
